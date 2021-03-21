@@ -34,14 +34,12 @@ public class HelloWorldTest {
 	}
 
 	private UsualPerson getExpectedPerson() {
-		UsualPerson person = new UsualPerson();
-		person.setAge(35);
-		person.setName("John Smith");
-
 		Country country = new Country();
 		country.setId(1);
 		country.setName("Russia");
 		country.setCodeName("RU");
+
+		UsualPerson person = new UsualPerson("John Smith", 35, country);
 
 		System.out.println("-->" + country.getA());
 
